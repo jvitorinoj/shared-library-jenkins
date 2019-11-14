@@ -1,0 +1,6 @@
+ @Library('pipeline-library@')
+    import pipeline.jenkins.*
+
+    def builder = new JenkinsPipelineBootstrap().createBuilder()
+    
+    builder.mavenApplicationPipeline()    
